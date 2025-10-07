@@ -1,0 +1,16 @@
+fetch('products.json')
+  .then(response => response.json())
+  .then(products => {
+    const productsDiv = document.getElementById('products');
+    products.forEach(product => {
+      const productEl = document.createElement('div');
+      productEl.className = 'product';
+      productEl.innerHTML = `
+        <img src="${product.image}" alt="${product.name}" width="150">
+        <h2>${product.name}</h2>
+        <p>Цена: ${product.price} руб.</p>
+        <button>В корзину</button>
+      `;
+      productsDiv.appendChild(productEl);
+    });
+  });

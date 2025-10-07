@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Мой Интернет-Магазин</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Добро пожаловать в мой интернет-магазин!</h1>
+  <div id="products"></div>
+  <script src="script.js"></script>
+</body>
+</html>
